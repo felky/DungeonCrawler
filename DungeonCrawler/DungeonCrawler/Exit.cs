@@ -19,7 +19,7 @@ namespace DungeonCrawler
         private void End(Player player)
         {
             Console.Clear();
-            Console.WriteLine($"Congratulations, you did it!\nIt took you {player.moves} to finish the map :)");
+            Console.WriteLine($"Congratulations, you did it!\nIt took you {player.moves} moves to finish the map :)");
             Console.ReadLine();
             Environment.Exit(0);
         }
