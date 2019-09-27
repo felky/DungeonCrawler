@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public enum Type { Monster, Key, Empty, Door, Exit }
-
 namespace DungeonCrawler
 {
+    // en ruta som man kan rita och interagera med.
     public abstract class Tile : IDrawable
     {
         public abstract char tile { get; set; }
