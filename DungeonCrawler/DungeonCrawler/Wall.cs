@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
-    public abstract class Tile : IDrawable
+    class Wall : Tile
     {
-        public abstract char tile { get; }
-        public abstract void Interact(Player player);
+        public override char tile { get => '#'; }
+
+        public override void Interact(Player player)
+        {
+
+        }
     }
 }

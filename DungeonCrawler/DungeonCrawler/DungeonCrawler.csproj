@@ -48,6 +48,7 @@
     <Compile Include="Tile.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="Wall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
