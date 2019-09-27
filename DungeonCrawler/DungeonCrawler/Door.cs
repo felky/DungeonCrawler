@@ -10,6 +10,9 @@ namespace DungeonCrawler
     {
         private char t = '▒';
         public override char tile { get => t; set => t = value; }
+        private Type type = Type.Door;
+        public override Type Type { get => type; set => type = value; }
+
         private bool locked = true;
 
         public override void Interact(Player player)
