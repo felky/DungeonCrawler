@@ -13,13 +13,13 @@ namespace DungeonCrawler
 
         public override void Interact(Player player)
         {
-            End();
+            End(player);
         }
 
-        private void End()
+        private void End(Player player)
         {
             Console.Clear();
-            Console.WriteLine("Congratulations, you did it!");
+            Console.WriteLine($"Congratulations, you did it!\nIt took you {player.moves} to finish the map :)");
             Console.ReadLine();
             Environment.Exit(0);
         }

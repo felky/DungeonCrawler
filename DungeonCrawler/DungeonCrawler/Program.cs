@@ -12,11 +12,6 @@ namespace DungeonCrawler
         static Tile[,] map = new Tile[5, 14];
         static void Main(string[] args)
         {
-            //##############
-            //#.n...#U.....#
-            //#...@.####D###
-            //#nM...D.D...k#
-            //##############
             PopulateMap();
             DrawMap();
         }
