@@ -18,6 +18,7 @@ namespace DungeonCrawler
             {
                 player.Keys++;
                 looted = true;
+                t = '.';
             }
             player.Move();
         }
