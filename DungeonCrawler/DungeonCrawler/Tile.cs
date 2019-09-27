@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public enum Type { Monster, Key, Empty, Door, Exit }
+
 namespace DungeonCrawler
 {
     public abstract class Tile : IDrawable

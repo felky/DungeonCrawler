@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exit.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Room.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="Player.cs" />

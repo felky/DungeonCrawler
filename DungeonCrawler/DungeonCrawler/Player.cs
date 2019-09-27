@@ -12,6 +12,7 @@ namespace DungeonCrawler
         public int x = 0;
         public int y = 0;
         public int direction = 0;
+        public int moves = 0;
         const int up = 0;
         const int right = 1;
         const int down = 2;
