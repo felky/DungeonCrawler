@@ -8,14 +8,16 @@ namespace DungeonCrawler
 {
     class Exit : Tile
     {
-        private char t = 'U';
+        private char t = '╬';
         public override char tile { get => t; set => t = value; }
 
+        // Om spelaren går in i rutan körs End() metoden
         public override void Interact(Player player)
         {
             End(player);
         }
 
+        // Skriver ut ett meddelande och stänger av spelet 
         private void End(Player player)
         {
             Console.Clear();

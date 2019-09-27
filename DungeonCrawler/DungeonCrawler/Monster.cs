@@ -8,7 +8,7 @@ namespace DungeonCrawler
 {
     class Monster : Tile
     {
-        private char t = 'M';
+        private char t = '©';
         public override char tile { get => t; set => t = value; }
 
         private bool isDefeated = false;
