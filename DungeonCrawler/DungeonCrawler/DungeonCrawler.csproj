@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-	  <Compile Include="Tile.cs" />
 	  <Compile Include="Room.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
