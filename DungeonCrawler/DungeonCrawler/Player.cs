@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
+    // en spelare class som har position, nycklar, riktning och move funktion.
     public class Player
     {
         public int Keys = 0;

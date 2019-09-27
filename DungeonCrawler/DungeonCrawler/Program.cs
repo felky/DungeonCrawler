@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
+    //Highscore
+    //Micke: 90
     class Program
     {
         static Player player = new Player { x = 4, y = 2 };
@@ -18,13 +20,13 @@ namespace DungeonCrawler
                 Console.Clear();
                 Console.WriteLine(
                   @"
-                    ██▄     ▄      ▄     ▄▀  ▄███▄   ████▄    ▄       ▄█▄    █▄▄▄▄ ██     ▄ ▄   █    
-                    █  █     █      █  ▄▀    █▀   ▀  █   █     █      █▀ ▀▄  █  ▄▀ █ █   █   █  █    
-                    █   █ █   █ ██   █ █ ▀▄  ██▄▄    █   █ ██   █     █   ▀  █▀▀▌  █▄▄█ █ ▄   █ █    
-                    █  █  █   █ █ █  █ █   █ █▄   ▄▀ ▀████ █ █  █     █▄  ▄▀ █  █  █  █ █  █  █ ███▄ 
-                    ███▀  █▄ ▄█ █  █ █  ███  ▀███▀         █  █ █     ▀███▀    █      █  █ █ █      ▀
-                           ▀▀▀  █   ██                     █   ██             ▀      █    ▀ ▀        
-                                                                                    ▀                ");
+██▄     ▄      ▄     ▄▀  ▄███▄   ████▄    ▄       ▄█▄    █▄▄▄▄ ██     ▄ ▄   █    
+█  █     █      █  ▄▀    █▀   ▀  █   █     █      █▀ ▀▄  █  ▄▀ █ █   █   █  █    
+█   █ █   █ ██   █ █ ▀▄  ██▄▄    █   █ ██   █     █   ▀  █▀▀▌  █▄▄█ █ ▄   █ █    
+█  █  █   █ █ █  █ █   █ █▄   ▄▀ ▀████ █ █  █     █▄  ▄▀ █  █  █  █ █  █  █ ███▄ 
+███▀  █▄ ▄█ █  █ █  ███  ▀███▀         █  █ █     ▀███▀    █      █  █ █ █      ▀
+       ▀▀▀  █   ██                     █   ██             ▀      █    ▀ ▀        
+                                                                ▀                ");
                 DrawMap();
                 Console.WriteLine($"Keys: {player.Keys}");
                 Console.WriteLine($"Moves: {player.moves}");

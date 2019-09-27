@@ -12,6 +12,7 @@ namespace DungeonCrawler
         private char t = '¶';
         private bool looted = false;
 
+        // Spelaren plockar upp nyckeln när man går på rutan
         public override void Interact(Player player)
         {
             if (!looted)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
+    // ett tomt rum som man kan gå in i.
     public class Room : Tile
     {
         private char t = '.';
