@@ -22,14 +22,19 @@ namespace DungeonCrawler
             switch (_type)
             {
                 case Type.Empty:
+                    tile = '.';
                     break;
                 case Type.Key:
+                    tile = 'k';
                     break;
                 case Type.Door:
+                    tile = 'D';
                     break;
                 case Type.Exit:
+                    tile = 'U';
                     break;
                 case Type.Monster:
+                    tile = 'M';
                     break;
                 default:
                     break;
