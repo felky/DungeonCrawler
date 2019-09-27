@@ -16,6 +16,15 @@ namespace DungeonCrawler
             while (true)
             {
                 Console.Clear();
+                Console.WriteLine(
+                  @"
+                    ██▄     ▄      ▄     ▄▀  ▄███▄   ████▄    ▄       ▄█▄    █▄▄▄▄ ██     ▄ ▄   █    
+                    █  █     █      █  ▄▀    █▀   ▀  █   █     █      █▀ ▀▄  █  ▄▀ █ █   █   █  █    
+                    █   █ █   █ ██   █ █ ▀▄  ██▄▄    █   █ ██   █     █   ▀  █▀▀▌  █▄▄█ █ ▄   █ █    
+                    █  █  █   █ █ █  █ █   █ █▄   ▄▀ ▀████ █ █  █     █▄  ▄▀ █  █  █  █ █  █  █ ███▄ 
+                    ███▀  █▄ ▄█ █  █ █  ███  ▀███▀         █  █ █     ▀███▀    █      █  █ █ █      ▀
+                           ▀▀▀  █   ██                     █   ██             ▀      █    ▀ ▀        
+                                                                                    ▀                ");
                 DrawMap();
                 Console.WriteLine(player.moves);
                 var key = Console.ReadKey();
