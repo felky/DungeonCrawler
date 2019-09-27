@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
-    public abstract class Tile : IDrawable
+    interface IDrawable
     {
-        public char tile { get; set; }
-        public abstract void Interact();
+        char tile { get; set; }
     }
 }
