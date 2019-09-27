@@ -8,6 +8,6 @@ namespace DungeonCrawler
 {
     interface IDrawable
     {
-        char tile { get; set; }
+        char tile { get; }
     }
 }
