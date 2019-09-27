@@ -8,7 +8,9 @@ namespace DungeonCrawler
 {
     class Monster : Tile
     {
-        public override char tile => 'M';
+        private char t = 'M';
+        public override char tile { get => t; set => t = value; }
+
         private bool isDefeated = false;
 
         public override void Interact(Player player)
@@ -17,7 +19,7 @@ namespace DungeonCrawler
             {
                 player.moves += 5;
                 isDefeated = true;
-                tile = '.';
+                t = '.';
             }
 
             player.Move();

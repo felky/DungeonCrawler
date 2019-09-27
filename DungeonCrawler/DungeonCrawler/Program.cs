@@ -10,6 +10,7 @@ namespace DungeonCrawler
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
