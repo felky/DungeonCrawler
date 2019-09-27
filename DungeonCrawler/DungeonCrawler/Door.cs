@@ -20,6 +20,7 @@ namespace DungeonCrawler
                 {
                     player.Keys--;
                     locked = false;
+                    t = '.';
                 }
             }
             if (!locked)
