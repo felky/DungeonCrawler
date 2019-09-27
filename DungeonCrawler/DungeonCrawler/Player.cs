@@ -13,20 +13,20 @@ namespace DungeonCrawler
         public int y = 0;
         public int direction = 0;
         public int moves = 0;
-        const int up = 0;
-        const int right = 1;
-        const int down = 2;
-        const int left = 3;
+        public const int up = 0;
+        public const int right = 1;
+        public const int down = 2;
+        public const int left = 3;
 
         public void Move()
         {
             if (direction == up)
             {
-                y++;
+                y--;
             }
             if (direction == down)
             {
-                y--;
+                y++;
             }
             if (direction == right)
             {
@@ -36,6 +36,7 @@ namespace DungeonCrawler
             {
                 x--;
             }
+            moves++;
         }
     }
 }
