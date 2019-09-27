@@ -18,7 +18,33 @@ namespace DungeonCrawler
             //#nM...D.D...k#
             //##############
             PopulateMap();
-            DrawMap();
+            while (true)
+            {
+                Console.Clear();
+                DrawMap();
+                Console.WriteLine(player.moves);
+                var key = Console.ReadKey();
+                if (key.Key == ConsoleKey.W)
+                {
+                    player.direction = Player.up;
+                    map[player.y - 1, player.x].Interact(player);
+                }
+                if (key.Key == ConsoleKey.D)
+                {
+                    player.direction = Player.right;
+                    map[player.y, player.x + 1].Interact(player);
+                }
+                if (key.Key == ConsoleKey.S)
+                {
+                    player.direction = Player.down;
+                    map[player.y + 1, player.x].Interact(player);
+                }
+                if (key.Key == ConsoleKey.A)
+                {
+                    player.direction = Player.left;
+                    map[player.y, player.x - 1].Interact(player);
+                }
+            }
         }
 
         static void DrawMap()
