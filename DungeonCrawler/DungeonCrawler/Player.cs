@@ -22,11 +22,11 @@ namespace DungeonCrawler
         {
             if (direction == up)
             {
-                y++;
+                y--;
             }
             if (direction == down)
             {
-                y--;
+                y++;
             }
             if (direction == right)
             {
@@ -36,6 +36,7 @@ namespace DungeonCrawler
             {
                 x--;
             }
+            moves++;
         }
     }
 }
