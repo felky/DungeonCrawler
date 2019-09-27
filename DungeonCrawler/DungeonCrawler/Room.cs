@@ -4,11 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public enum Type { Monster, Key, Empty, Door, Exit }
+
 namespace DungeonCrawler
 {
-    public class Room 
+    public class Room : Tile
     {
+        private Type _type; 
 
+        public Room(Type type)
+        {
+            _type = type;
+        }
+
+        public override void Interact(Player player)
+        {
+            switch (_type)
+            {
+                case Type.Empty:
+                    break;
+                case Type.Key:
+                    break;
+                case Type.Door:
+                    break;
+                case Type.Exit:
+                    break;
+                case Type.Monster:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
 
