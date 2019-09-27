@@ -8,7 +8,8 @@ namespace DungeonCrawler
 {
     class Exit : Tile
     {
-        public override char tile { get => 'U'; }
+        private char t = 'U';
+        public override char tile { get => t; set => t = value; }
 
         public override void Interact(Player player)
         {
