@@ -26,7 +26,8 @@ namespace DungeonCrawler
                            ▀▀▀  █   ██                     █   ██             ▀      █    ▀ ▀        
                                                                                     ▀                ");
                 DrawMap();
-                Console.WriteLine(player.moves);
+                Console.WriteLine($"Keys: {player.Keys}");
+                Console.WriteLine($"Moves: {player.moves}");
                 var key = Console.ReadKey();
                 if (key.Key == ConsoleKey.W)
                 {
