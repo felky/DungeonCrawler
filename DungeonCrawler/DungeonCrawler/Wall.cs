@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DungeonCrawler
 {
+    // Väggen stoppar spelaren.
+
     class Wall : Tile
     {
         private char t = '█';
