@@ -8,7 +8,8 @@ namespace DungeonCrawler
 {
     class Key : Tile
     {
-        public override char tile => 'k';
+        private char t = 'k';
+        public override char tile { get => t; set => t = value; }
         private bool looted = false;
 
         public override void Interact(Player player)
