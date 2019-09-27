@@ -10,6 +10,7 @@ namespace DungeonCrawler
     public abstract class Tile : IDrawable
     {
         public abstract char tile { get; set; }
+        public abstract Type Type { get; set; }
         public abstract void Interact(Player player);
     }
 }

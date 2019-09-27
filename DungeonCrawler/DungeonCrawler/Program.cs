@@ -8,6 +8,8 @@ namespace DungeonCrawler
 {
     //Highscore
     //Micke: 90
+
+    public enum Type { Monster, Key, Empty, Door, Exit, Wall }
     class Program
     {
         static Player player = new Player { x = 4, y = 2 };
@@ -30,6 +32,7 @@ namespace DungeonCrawler
                 DrawMap();
                 Console.WriteLine($"Keys: {player.Keys}");
                 Console.WriteLine($"Moves: {player.moves}");
+                Console.WriteLine($"Current room: {map[player.y, player.x].Type}");
                 var key = Console.ReadKey();
                 if (key.Key == ConsoleKey.W)
                 {

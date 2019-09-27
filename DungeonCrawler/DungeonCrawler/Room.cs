@@ -11,6 +11,8 @@ namespace DungeonCrawler
     {
         private char t = '.';
         public override char tile { get => t; set => t = value; }
+        private Type type = Type.Empty;
+        public override Type Type { get => type; set => type = value; }
 
         public override void Interact(Player player)
         {
