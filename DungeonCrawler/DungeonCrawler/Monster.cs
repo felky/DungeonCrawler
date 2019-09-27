@@ -9,8 +9,6 @@ namespace DungeonCrawler
     class Monster : Tile
     {
         private char t = '©';
-        private Type type = Type.Monster;
-        public override Type Type { get => type; set => type = value; }
         public override char tile { get => t; set => t = value; }
 
         private bool isDefeated = false;

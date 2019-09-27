@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public enum Type { Monster, Key, Empty, Door, Exit }
 
 namespace DungeonCrawler
 {
     public abstract class Tile : IDrawable
     {
         public abstract char tile { get; set; }
-        public abstract Type Type { get; set; }
         public abstract void Interact(Player player);
     }
 }
