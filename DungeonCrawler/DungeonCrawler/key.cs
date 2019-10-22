@@ -9,7 +9,7 @@ namespace DungeonCrawler
     class Key : Tile
     {
         public override char tile { get => t; set => t = value; }
-        private char t = '¶';
+        private char t = 'k';
         private Type type = Type.Key;
         public override Type Type { get => type; set => type = value; }
         private bool looted = false;

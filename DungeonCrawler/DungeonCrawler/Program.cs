@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace DungeonCrawler
 {
     //Highscore
+    //Linus: 25
     //Micke: 90
 
     public enum Type { Monster, Key, Empty, Door, Exit, Wall }
@@ -14,10 +15,11 @@ namespace DungeonCrawler
     {
         static Player player = new Player { x = 4, y = 2 };
         static Tile[,] map = new Tile[5, 14];
+        public static bool running = true;
         static void Main(string[] args)
         {
             PopulateMap();
-            while (true)
+            while (running)
             {
                 Console.Clear();
                 Console.WriteLine(

@@ -25,7 +25,8 @@ namespace DungeonCrawler
             Console.Clear();
             Console.WriteLine($"Congratulations, you did it!\nIt took you {player.moves} moves to finish the map :)");
             Console.ReadLine();
-            Environment.Exit(0);
+            //Environment.Exit(0);
+            Program.running = false;
         }
     }
 }
