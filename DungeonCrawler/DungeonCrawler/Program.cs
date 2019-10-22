@@ -67,7 +67,9 @@ namespace DungeonCrawler
                 {
                     if (player.x == x && player.y == y)
                     {
+                        Console.BackgroundColor = ConsoleColor.Blue;
                         Console.Write('@');
+                        Console.BackgroundColor = ConsoleColor.Black;
                     }
                     else
                     {
